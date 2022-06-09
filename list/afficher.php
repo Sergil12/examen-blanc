@@ -12,8 +12,8 @@
 </head>
 <body>
     <ul>
-    <?php foreach($stagiaires as $stagiaires):?>
-        <li>
+    <?php foreach($stagiaires as $key => $stagiaires):?> <!--on veux reucpere aussi la cle -->
+        <li><a href="../detail_list?id=<?=$key ?>"> <!--En cliquant sur un nom du point 1 mener à la page associée en point 2 ex 3-->
            <?= $stagiaires['sexe'] === "M" ? "Mr" : "Mme" ?> <!--la condition si cest M on met mr sinon on met Mme 1.1-->
            <?= strtoupper($stagiaires["nom"]) ?> <!-- 1.2-->
            <?= ucwords($stagiaires["prenom"]) ?><!-- 1.3-->
