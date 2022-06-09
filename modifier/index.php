@@ -12,6 +12,10 @@ if (isset($_GET['id'])){ //si id existe dans get on le prend et on le met dans $
     }
 
 }
+
+if(isset($_POST["sauver"])){
+    var_dump($_POST);
+}
 require('afficher.php');
 
 ?>

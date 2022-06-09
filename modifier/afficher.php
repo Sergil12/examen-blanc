@@ -7,6 +7,7 @@
     <title>Modifier stagiaire</title>
 </head>
 <body>
+ <form action="" enctype="multipart/form-data" method="POST">
     <div>
         <label>
             Nom
@@ -51,6 +52,7 @@
         </label>
         <?php endforeach ?>
     </div>
-
+    <input type ="submit" value="Sauver"/> <!--EX 5 valider les donner -->
+ </form>
 </body>
 </html>
