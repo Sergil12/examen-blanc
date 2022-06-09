@@ -8,15 +8,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>List</title>
 </head>
 <body>
     <ul>
     <?php foreach($stagiaires as $stagiaires):?>
         <li>
-           <?= $stagiaires['sexe'] === "M" ? "Mr" : "Mme" ?> <!--la condition si cest M on met mr sinon on met Mme-->
-           <?= strtoupper($stagiaires["nom"]) ?>
-           <?= ucwords($stagiaires["prenom"]) ?>
+           <?= $stagiaires['sexe'] === "M" ? "Mr" : "Mme" ?> <!--la condition si cest M on met mr sinon on met Mme 1.1-->
+           <?= strtoupper($stagiaires["nom"]) ?> <!-- 1.2-->
+           <?= ucwords($stagiaires["prenom"]) ?><!-- 1.3-->
         </li> 
     <?php endforeach;?>
     </ul>
